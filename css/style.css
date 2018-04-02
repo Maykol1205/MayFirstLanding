@@ -98,6 +98,43 @@ blockquote {
  	padding: 0 15px;
 }
 
+.header {
+	overflow: hidden;
+	background-color: transparent;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 26px 15px;
+	z-index: 99;
+}
+
+.header .container-fluid {
+	overflow: hidden;
+}
+.header .logo {
+	float: left;
+	font-size: 0;
+}
+
+.header .header-nav {
+	float: right;
+	line-height: 21px;
+}
+
+.header .header-nav li {
+	float: left;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 11px;
+	font-weight: 400;
+	letter-spacing: .3em;
+	color: rgba(255, 255, 255, .75);
+	text-transform: uppercase;
+}
+
+.header .header-nav li + li {
+	margin-left: 33px;
+}
+
 .title {
 	font-family: 'Dosis', sans-serif;
 	text-transform: uppercase;
@@ -142,6 +179,7 @@ blockquote span, .blockquote span {
 
 .btn {
 	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
 	padding: 12px 20px;
 	border-radius: 2px;
 	font-size: 12px;
@@ -173,51 +211,16 @@ blockquote span, .blockquote span {
 }
 /* ===== Default component end ===== */
 
-.header {
-	overflow: hidden;
-	background-color: transparent;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	padding: 26px 15px;
-	z-index: 99;
-}
+/* ===== Custom styles start ===== */
 
-.header .container-fluid {
-	overflow: hidden;
-}
-.header .logo {
-	float: left;
-}
-
-.header .header-nav {
-	float: right;
-}
-
-.header .header-nav li {
-	float: left;
-}
-
-.header .header-nav li+li {
-	margin-left: 33px;
-}
-
-.header .header-nav a {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 11px;
-	font-weight: 400;
-	letter-spacing: .3em;
-	color: #fefefe;
-	text-transform: uppercase;
-}
-
-.header-landing-page {
+.inner {
 	background: url(../img/Landing-header-img.jpg) no-repeat center / cover;
 	height: 100vh;
 	text-align: center;
+	padding-top: 73px;
 }
 
-.header-landing-page::before {
+.inner::before {
 	content: '';
 	display: inline-block;
 	height: 100%;
@@ -225,24 +228,25 @@ blockquote span, .blockquote span {
 	margin-left: -4px;
 }
 
-.header-landing-page .container {
+.inner .inner-content {
 	display: inline-block;
 	vertical-align: middle;
 }
 
-.header-landing-page h1{
-	font-family: 'Dosis', sans-serif;
+.inner .inner-content h1{
 	font-size: 30px;
 	font-weight: 400;
-	color: #fefefe;
+	color: rgba(255, 255, 255, .9);
 	letter-spacing: 1.7em;
 	text-indent: 1.7em;
-	text-transform: uppercase;
+	margin-bottom: 100px;
 }
 
-.header-landing-page p {
-	padding-top: 100px;
+.inner .inner-content span {
+	display: block;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 19px;
-	color: #fefefe;
+	color: rgba(255, 255, 255, .68);
 }
+
+/* ===== Custom styles end ===== */
